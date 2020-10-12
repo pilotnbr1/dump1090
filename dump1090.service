@@ -4,6 +4,7 @@ Description=dump1090
 [Service]
 Type=simple
 ExecStart=/usr/local/bin/dump1090
+WorkingDirectory=/usr/local/share/dump1090
 
 [Install]
 WantedBy=multi-user.target
