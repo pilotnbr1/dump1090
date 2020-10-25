@@ -17,7 +17,7 @@ nameserver 8.8.4.4
 EOF
 fi
 
-PACKAGE_NAME=dump1090
+PACKAGE_NAME=dump1090-fa
 
 TMPDIR=/tmp/${PACKAGE_NAME}-installdir
 
