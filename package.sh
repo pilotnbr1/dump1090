@@ -25,12 +25,10 @@ rm -rf ${TMPDIR}/*
 
 mkdir -p ${TMPDIR}/etc/systemd/system || exit 1
 mkdir -p ${TMPDIR}/usr/local/bin || exit 1
-mkdir -p ${TMPDIR}/usr/local/share/dump1090 || exit 1
 
 make || exit 1
 cp dump1090 ${TMPDIR}/usr/local/bin/ || exit 1
 cp dump1090.service ${TMPDIR}/etc/systemd/system/ || exit 1
-cp gmap.html ${TMPDIR}/usr/local/share/dump1090/ || exit 1
 
 
 VERSION=$(git describe)
