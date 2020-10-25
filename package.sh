@@ -40,6 +40,7 @@ rm ${PACKAGE_NAME}_${VERSION//v}_${PACKAGE_ARCH}.deb > /dev/null 2>&1
 fpm -a ${PACKAGE_ARCH} -s dir -t deb -n ${PACKAGE_NAME} -v ${VERSION//v} -C ${TMPDIR} \
   --after-install after-install.sh \
   -d "librtlsdr-dev" \
+  -d "libncurses5" \
   -p ${PACKAGE_NAME}_VERSION_ARCH.deb || exit 1
 
 #
