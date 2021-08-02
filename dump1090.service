@@ -3,7 +3,7 @@ Description=dump1090
 
 [Service]
 Type=simple
-ExecStart=/usr/local/bin/dump1090 --net --no-fix --write-json-every 2
+ExecStart=/usr/local/bin/dump1090 --net --no-fix 
 
 [Install]
 WantedBy=multi-user.target
